@@ -1,0 +1,7 @@
+<div style="padding: 20px;">
+<ul *ngFor="let user of users; trackBy:trackById">
+<li>{{user.name}}</li>
+</ul>
+
+<button (click)="assignData()">Assign Data</button>
+</div>

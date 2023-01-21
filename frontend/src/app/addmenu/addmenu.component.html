@@ -1,0 +1,43 @@
+<div class="container py-3">
+<div class="row">
+<div class="col-md-6">
+<h2>Employee Mangement</h2>
+</div>
+
+<div class="col ml-auto text-right">
+<button type="button" class="btn btn-outline-success" (click)="onAddEmployee()">
+    <i class="fa fa-plus"></i> Add Employee
+</button>
+</div>
+</div>
+<hr />
+
+<div class="row">
+    <div class="col-md-4">
+        <div class="card mb-3">
+            <div class="card-body">
+                <h5 class="card-title">Prakash</h5>
+                <h6 class="card-subtitle mb-2 text-muted">Fullstack Developer</h6>
+                <span class="badge badge-success">Design</span>
+                <hr />
+                <button type="button" class="btn btn-sm btn-outline-primary mr-2">Edit</button>
+                <button type="button" class="btn btn-sm btn-outline-danger">Delete</button>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+<div class="modal fade show" [class.show]="showModal">
+<div class="modal-dialog modal-dailog-centered" role="document">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h5 class="modal-title">Add Employee</h5>
+            <button (click)="onCloseModal()" type="button" class="close" data-close>
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+    </div>
+</div>
+</div>
